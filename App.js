@@ -1,5 +1,5 @@
 import React, {Component, useRef} from 'react'
-import {Button, StyleSheet, View} from 'react-native'
+import {Alert, Button, StyleSheet, View} from 'react-native'
 import {Camera, useCameraDevices} from "react-native-vision-camera"
 
 export default class App extends Component {
@@ -40,18 +40,18 @@ function VisionCamera() {
           key={'btn'}
           title='press me!'
           onPress={async () => {
-            getVideo(camera)
+            takePhoto(camera)
           }}
           style={{position: 'absolute'}}
         />,
-        <Button
+        /*<Button
           key={'btn2'}
           title='stop recording'
           onPress={async () => {
             await camera.current.stopRecording()
           }}
           style={{position: 'absolute'}}
-        />
+        />*/
       ]
   )
 }
@@ -73,7 +73,7 @@ async function takePhoto(camera) {
   const photo = await camera.current.takePhoto({
     flash: 'on'
   })
-  console.log('photo', photo, 'time:', (Date.now() - start) / 1000 )
+  Alert.alert(`photo time: ${(Date.now() - start) / 1000 }`)
 }
 
 async function perm() {

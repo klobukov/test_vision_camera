@@ -318,7 +318,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.name.freshrn;
 				PRODUCT_NAME = freshrn;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5.2;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -340,7 +340,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.name.freshrn;
 				PRODUCT_NAME = freshrn;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5.2;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
