@@ -5,7 +5,9 @@ import {
   useCameraDevices,
   useFrameProcessor
 } from "react-native-vision-camera"
-import {scanOCR} from "vision-camera-ocr";
+import {scanOCR} from "vision-camera-ocr"
+import { labelImage } from "vision-camera-image-labeler";
+import 'react-native-reanimated'
 
 export default class App extends Component {
 

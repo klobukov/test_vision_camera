@@ -6476,6 +6476,11 @@ vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
 
+vision-camera-image-labeler@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/vision-camera-image-labeler/-/vision-camera-image-labeler-0.1.6.tgz#f3952ed282e23cfc8a7f07e8a0b1b8b212348450"
+  integrity sha512-wVm9eTs15Q2jXWnamXrL8ucuDfJVL1U1fWmO7LH7N2m5WTGBfdqxmbOt7M79oGl8b+T9eYA9fgtBxzz/Fl0k3w==
+
 vision-camera-ocr@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/vision-camera-ocr/-/vision-camera-ocr-1.0.0.tgz#f1ab41b10ed52533bca088139c698de2b6141f8b"
