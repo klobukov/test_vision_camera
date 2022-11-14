@@ -1,6 +1,11 @@
 import React, {Component, useRef} from 'react'
 import {Alert, Button, StyleSheet, View} from 'react-native'
-import {Camera, useCameraDevices} from "react-native-vision-camera"
+import {
+  Camera,
+  useCameraDevices,
+  useFrameProcessor
+} from "react-native-vision-camera"
+import {scanOCR} from "vision-camera-ocr";
 
 export default class App extends Component {
 
@@ -18,6 +23,11 @@ export default class App extends Component {
 
 }
 function VisionCamera() {
+  const frameProcessor = useFrameProcessor((frame) => {
+    'worklet'
+    const scannedOcr = scanOCR(frame)
+    console.log('scanned', scannedOcr)
+  }, [])
   const devices = useCameraDevices('wide-angle-camera')
   const camera = useRef(null)
   const device = devices.back
@@ -35,6 +45,7 @@ function VisionCamera() {
         video={true}
         audio={true}
         enableZoomGesture={true}
+        frameProcessor={frameProcessor}
       />,
         <Button
           key={'btn'}
