@@ -9,6 +9,7 @@ import {scanOCR} from "vision-camera-ocr"
 //import { labelImage } from "vision-camera-image-labeler";
 import 'react-native-reanimated'
 
+
 export default class App extends Component {
 
   state = {ok: false}
@@ -47,6 +48,7 @@ function VisionCamera() {
         video={true}
         audio={true}
         enableZoomGesture={true}
+        onInitialized={() => console.log('initialized')}
         frameProcessor={frameProcessor}
       />,
         <Button
