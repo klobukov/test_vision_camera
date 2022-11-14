@@ -16,7 +16,8 @@
     "react-dom": "18.0.0",
     "react-native": "0.69.6",
     "react-native-vision-camera": "^2.15.1",
-    "react-native-web": "~0.18.7"
+    "react-native-web": "~0.18.7",
+    "vision-camera-ocr": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
